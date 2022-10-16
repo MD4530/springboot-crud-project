@@ -59,6 +59,9 @@ public class CrudController {
         return new ResponseEntity<> (HttpStatus.NO_CONTENT);
 
     }
-
+    
+    public void check(){
+        int a;
+    }
 
 }
