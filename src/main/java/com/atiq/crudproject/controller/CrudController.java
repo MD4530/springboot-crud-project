@@ -60,10 +60,5 @@ public class CrudController {
 
     }
 
-//    we need custome queries
-
-    public  void atik(){
-        System.out.println("I love bangaldesh");
-    }
 
 }
