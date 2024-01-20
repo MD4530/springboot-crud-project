@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.atiq</groupId>
-    <artifactId>crud-project</artifactId>
+    <artifactId>student-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>crud-project</name>
-    <description>crud-project</description>
+    <name>student-project</name>
+    <description>student-project</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -42,6 +42,18 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.0.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

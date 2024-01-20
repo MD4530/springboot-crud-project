@@ -12,6 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="crud-project" target="11" />
+      <module name="player2-utils" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
