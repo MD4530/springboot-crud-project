@@ -1,19 +1,40 @@
-package com.atiq.crudproject.controller;
+package com.social.controller;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.social.services.SocialService;
 import lombok.extern.slf4j.Slf4j;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.json.*;
+import java.util.*;
+import java.security.PublicKey;
 
 @Slf4j
 @Controller
-public class CrudController {
+public class SocialController {
+    @Autowired
+    SocialService socialService;
+
     @GetMapping("/testPoint")
     public ResponseEntity<String> getPointTest(){
         log.info(HttpStatus.OK.toString() + " : test point");
+
+        log.info(socialService.TestServiceClass());
+
         return new ResponseEntity<>("Hello World!", HttpStatus.OK);
+    }
+
+    @PostMapping("/signup")
+    public String signupFun(@RequestBody String signUpData) throws  Throwable{
+        if (signUpData.length() >1){
+            JSONObject validatedData = socialService.singUpDataValidation (new JSONObject(signUpData));
+
+        }
+        return  "";
     }
 
 //    @GetMapping("{fName}")

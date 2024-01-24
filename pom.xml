@@ -26,6 +26,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160212</version>
+        </dependency>
 
         <dependency>
             <groupId>org.postgresql</groupId>
@@ -55,6 +60,7 @@
             <artifactId>httpclient</artifactId>
             <scope>test</scope>
         </dependency>
+
 
     </dependencies>
 

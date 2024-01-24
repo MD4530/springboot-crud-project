@@ -1,13 +1,13 @@
-package com.atiq.crudproject;
+package com.social;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CrudProjectApplication {
+public class Main {
     public static void main(String[] args) {
 
-        SpringApplication.run(CrudProjectApplication.class, args);
+        SpringApplication.run(Main.class, args);
     }
 
 }

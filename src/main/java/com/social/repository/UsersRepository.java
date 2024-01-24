@@ -1,15 +1,13 @@
-package com.atiq.crudproject.repository;
+package com.social.repository;
 
-import com.atiq.crudproject.model.Student;
+import com.social.model.users;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 
-import java.util.Collection;
 import java.util.UUID;
 
 
-public interface StudentRepository extends JpaRepository<Student, UUID >{
+public interface UsersRepository extends JpaRepository<users, UUID >{
 //    @Query("SELECT s.fName FROM Student s WHERE (:fname is null or s.fName = :fname) and (:lname is null"
 //            + " or s.lName = :lname)")
 //    List<Student> findStudentsByFNameAndLName(@Param("fname") String fName, @Param("lname") String lName);
